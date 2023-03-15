@@ -1,0 +1,29 @@
+@import '../../styles/_fonts';
+
+.Presentation {
+    display: flex;
+
+    &__info {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        &>h1 {
+            font-family: $font-primary;
+        }
+        &>h2 {
+            font-family: $font-secondary;
+        }
+    }
+
+    &__img {
+        width: 50%;
+
+        &>img {
+            max-width: 720px;
+            border-radius: 10px;
+        }
+    }
+}
