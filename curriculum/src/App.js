@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import { makeStyles} from '@mui/material'
+import Carousel from './components/slider/carousel';
 import Navbar from './components/navbar/navbar';
-import Button from 'react-bootstrap/Button';
 import Presentation from './components/presentation/presentation';
+import AboutMe from './components/aboutme/aboutMe';
 
 
 function App() {
@@ -10,7 +9,21 @@ function App() {
   return (
     <div className='App'>
       <Navbar prop={'prueba'}/>
-      <Presentation></Presentation>
+      <div className="container">
+        <Presentation></Presentation>
+      </div>
+      <div className="container">
+        <Carousel></Carousel>
+      </div>
+      <div className="container">
+        <AboutMe></AboutMe>
+      </div>
+      <div className="container"></div>
+      <div className="container"></div>
+      <div className="container"></div>
+      
+      
+      
     </div>
   );
 }
